@@ -2,6 +2,9 @@
 Primero creamos el def, luego lo agregaremos al bucle del programa
 """
 
+fraseInicial = None
+
+
 def cogerylower():
     frase = str(input("Ingrese una frase > "))
     frase = frase.lower()
@@ -19,10 +22,10 @@ def contabilizador(frase):
     return(count)
 
 
-for i in range(1):
-    fraseInicial = "o"
-    fraselarga = fraseInicial
+def programa():
+    fraselarga = "o"
     while True:
+
         fraseInicial = cogerylower()
         if fraseInicial == "fi":
             break
@@ -38,3 +41,6 @@ for i in range(1):
          print(fraselarga)
          
                 
+                
+                
+programa()
