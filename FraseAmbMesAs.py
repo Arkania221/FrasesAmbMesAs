@@ -6,19 +6,24 @@ def cogerylower():
     frase = str(input("Ingrese una frase > "))
     frase = frase.lower()
     return(frase)
-    
 
-def comparar():
-    fraseInicial = cogerylower()
-    if fraseInicial == "fi":
-        fraseFinal = "fi"
-    else:
-        fraseFinal = "El programa sigue"
-    return(fraseFinal)
+
+
+def contabilizador(frase):
+    count = 0
+    for i in frase:
+        if i == "a":
+            count += 1
+        else:
+            pass
+    return(count)
+
 
 while True:
-    fraseFinal = comparar()
-    if fraseFinal == "fi":
+    fraseInicial = cogerylower()
+    if fraseInicial == "fi":
         break
     else:
-        print(fraseFinal)
+     totalA = contabilizador(fraseInicial)
+     print("La frase: " + str(fraseInicial) + ". Es la frase con mas A's con: " + str(totalA) + " A's")
+            
