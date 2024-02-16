@@ -8,7 +8,7 @@ def cogerylower():
     return(frase)
     
 
-def comparar()
+def comparar():
     fraseInicial = cogerylower()
     if fraseInicial == "fi":
         fraseFinal = "fi"
